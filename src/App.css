@@ -1,0 +1,54 @@
+   * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Kristi", cursive;
+      }
+
+      html {
+        font-size: 65%;
+      }
+
+      .main_header {
+        width: 100vw;
+        height: 100vh;
+        background-color: hsl(0, 0%, 94%);
+        display: grid;
+        place-items: center;
+      }
+
+      .center_div {
+        min-width: 50vw;
+        height: 40vh;
+        color: #000;
+        text-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+        font-size: 4.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+      }
+      .heart {
+         width: 100px;
+         height: 100px;
+         position: absolute;
+         left: 87%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+         background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+         background-position: 0 0;
+         cursor: pointer;
+         animation: fave-heart 1s steps(28) infinite;
+
+  }
+
+@keyframes fave-heart{
+0% {
+background-position: 0 0;
+}
+100% {
+background-position: -2800px 0;
+}
+}
+
+
